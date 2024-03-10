@@ -15,7 +15,7 @@ body
 }
 
 
-.header
+.header 
 {
     position:fixed;
     text-decoration: none;
@@ -31,7 +31,19 @@ body
     z-index: 100;
 }
 
+.header a {
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    color: #c2b648;
+}
 
+.header a:hover{
+    color: #0ef;
+}
 .logo {
     position: relative;
     font-size: 600;
@@ -89,15 +101,15 @@ body
 
 .home-sci a:hover{
     background: #0ef;
-    color: #081b29;
+    color: #848a8f;
     box-shadow: 0 0 20px #0ef;
 }
 
 .btn-box {
     display: inline-block;
-    padding: 12px;
+    padding: 2px;
     background: #0ef;
-    border-radius: 40px;
+    border-radius: 50px;
     font-size: 16px;
     color: #081b29;
     letter-spacing: 1px;
@@ -107,6 +119,8 @@ body
 
 
 .btn-box:hover{
-    box-shadow: 0 0 5px cyan;
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
     
 }
