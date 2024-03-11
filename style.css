@@ -57,7 +57,7 @@ body
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
-    color: #0ef;
+    color: #fff;
     opacity: 0;
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
@@ -90,18 +90,18 @@ body
 
 .home-content h1{
     animation: slideRight 1s ease forwards;
-    animation-delay: .7s;
+    animation-delay: .2s;
 }
 
 .home-content p{
     animation: slideLeft 1s ease forwards;
-    animation-delay: .7s;
+    animation-delay: .2s;
 }
 
 .home-content:nth-of-type(2){
     margin-bottom: 30px;
     animation: slideTop 1s ease forwards;
-    animation-delay: .7s ;
+    animation-delay: .2s ;
 }
 
 
@@ -159,6 +159,87 @@ body
 }
 
 
+.about{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.about h3{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0 5px 5px 0;
+    animation: slideTop 2s ease forwards;
+    animation-delay: .7s;
+}
+
+
+.about p{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    animation: slideRight .2s ease forwards;
+    animation-delay: .7s;
+}
+
+
+.Technologies{
+    text-decoration: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px ;
+    margin: 10px;
+}
+
+
+.all-technologies h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin:20px ;
+    animation: slideLeft 2s ease forwards;
+    animation-delay: .7s;
+}
+
+
+.all-technologies a{
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin: 10px;
+    margin-left: 15px;
+    color: rgb(9, 17, 17);
+    display: inline-block;
+    padding: 2px;
+    background: #0ef;
+    border-radius: 50px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef
+}
+
+
+.all-technologies a:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+    
+}
+
+
+
+
 @keyframes slideRight{
     0%{
         transform:translateX(-100px) ;
@@ -193,4 +274,5 @@ body
         opacity: 1;
     }
 }
+
 
